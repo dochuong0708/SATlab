@@ -17,10 +17,10 @@ def Giai_SODUKU(Bang):
        for cot in range(9):
         dung1([laydiachi(hang,cot,giatri) for giatri in range(9)])
     for hang in range(9):
-       for v in range(9):
+       for giatri in range(9):
         dung1([laydiachi(hang,cot,giatri) for cot in range(9)])
     for cot in range(9):
-       for v in range(9):
+       for giatri in range(9):
         dung1([laydiachi(hang,cot,giatri) for hang in range(9)])
     for hang_cua_khoi in range(3):
      for cot_cua_khoi in range(3):
