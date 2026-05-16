@@ -76,11 +76,11 @@ def Giai_SUDOKU(Bang):
 
     def EXACTLY_ONE(daysodung):
        # AMK(daysodung,1) #(Dung them ALO)
-        ALK(daysodung,1) 
         n = len(daysodung)
         for i in range(n):
             for j in range(i+1,n):
              Giai.add_clause([-daysodung[i],-daysodung[j]])
+        ALK(daysodung,1) 
 
 
     for hang in range(9):
