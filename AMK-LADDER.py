@@ -12,10 +12,10 @@ def AMK(Giai, dayso, start_i_dayso, k):
         for j in range(1, k+1):
             Giai.add_clause([-S(i-1,j), S(i,j)])
 
-        for i in range(1, n-1):
+     for i in range(1, n-1):
             Giai.add_clause([-dayso[i], S(i,1)])  
 
-        for j in range(2, k+1):
+     for j in range(2, k+1):
             Giai.add_clause([-dayso[i],-S(i-1,j-1),S(i,j)])
 
      for i in range(k, n):
@@ -71,7 +71,7 @@ def main():
     vars = list(range(1, 11))
     weight = 4
     SC(g, vars, weight)
-    g.add_clause([3])
+    g.add_clause([2])
     result = g.solve()
     print("SAT:", result)
     if result:
